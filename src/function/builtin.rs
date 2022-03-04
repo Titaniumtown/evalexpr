@@ -42,36 +42,36 @@ macro_rules! int_function {
 pub fn builtin_function(identifier: &str) -> Option<Function> {
     match identifier {
         // Log
-        "math::ln" => simple_math!(ln),
-        "math::log" => simple_math!(log, 2),
-        "math::log2" => simple_math!(log2),
-        "math::log10" => simple_math!(log10),
+        "ln" => simple_math!(ln),
+        "log" => simple_math!(log, 2),
+        "log2" => simple_math!(log2),
+        "log10" => simple_math!(log10),
         // Exp
-        "math::exp" => simple_math!(exp),
-        "math::exp2" => simple_math!(exp2),
+        "exp" => simple_math!(exp),
+        "exp2" => simple_math!(exp2),
         // Pow
-        "math::pow" => simple_math!(powf, 2),
+        "pow" => simple_math!(powf, 2),
         // Cos
-        "math::cos" => simple_math!(cos),
-        "math::acos" => simple_math!(acos),
-        "math::cosh" => simple_math!(cosh),
-        "math::acosh" => simple_math!(acosh),
+        "cos" => simple_math!(cos),
+        "acos" => simple_math!(acos),
+        "cosh" => simple_math!(cosh),
+        "acosh" => simple_math!(acosh),
         // Sin
-        "math::sin" => simple_math!(sin),
-        "math::asin" => simple_math!(asin),
-        "math::sinh" => simple_math!(sinh),
-        "math::asinh" => simple_math!(asinh),
+        "sin" => simple_math!(sin),
+        "asin" => simple_math!(asin),
+        "sinh" => simple_math!(sinh),
+        "asinh" => simple_math!(asinh),
         // Tan
-        "math::tan" => simple_math!(tan),
-        "math::atan" => simple_math!(atan),
-        "math::tanh" => simple_math!(tanh),
-        "math::atanh" => simple_math!(atanh),
-        "math::atan2" => simple_math!(atan2, 2),
+        "tan" => simple_math!(tan),
+        "atan" => simple_math!(atan),
+        "tanh" => simple_math!(tanh),
+        "atanh" => simple_math!(atanh),
+        "atan2" => simple_math!(atan2, 2),
         // Root
-        "math::sqrt" => simple_math!(sqrt),
-        "math::cbrt" => simple_math!(cbrt),
+        "sqrt" => simple_math!(sqrt),
+        "cbrt" => simple_math!(cbrt),
         // Hypotenuse
-        "math::hypot" => simple_math!(hypot, 2),
+        "hypot" => simple_math!(hypot, 2),
         // Rounding
         "floor" => simple_math!(floor),
         "round" => simple_math!(round),
